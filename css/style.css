@@ -108,32 +108,6 @@ a:hover {
             0 0 0 var(--red), 
             0 0 0 var(--yellow);
     }
-/*
-    20% {  
-        transform: translateY(0);
-        text-shadow: 
-            0 0 0 var(--blue), 
-            0 0 0 var(--cyan), 
-            0 0 0 var(--red), 
-            0 0 0 var(--yellow);
-    }
-
-    23% {  
-        transform: translateY(-.4em);
-        text-shadow: 
-            0 0.1em 0 var(--blue), 
-            0 0.03em 0 var(--cyan), 
-            0 -0.03em 0 var(--red), 
-            0 -0.1em 0 var(--yellow);
-    }
-    26% {  
-        transform: translateY(0);
-        text-shadow: 
-            0 0 0 var(--blue), 
-            0 0 0 var(--cyan), 
-            0 0 0 var(--red), 
-            0 0 0 var(--yellow);
-    }*/
 
     88% {  
         transform: translateY(0);
@@ -161,27 +135,7 @@ a:hover {
             0 0 0 var(--red), 
             0 0 0 var(--yellow);
     }
-/*
 
-
-    85% {  
-        transform: translateX(1em);
-        text-shadow: 
-            0.15em 0 0 var(--blue), 
-            0.05em 0 0 var(--cyan), 
-            -0.05em 0 0 var(--red), 
-            -0.15em 0 0 var(--yellow);
-    }
-
-    87% {  
-        transform: translateX(0);
-        text-shadow: 
-            0 0 0 var(--blue), 
-            0 0 0 var(--cyan), 
-            0 0 0 var(--red), 
-            0 0 0 var(--yellow);
-    }
-*/
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -232,14 +186,19 @@ button a:hover {
 	color: black;
 }
 
+
 .container {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
 	flex-wrap: wrap;
 }
+.shows-container {
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
 .show {
-	max-width: 33%;
 	margin: 10px;
 }
 .show h2 {
@@ -257,7 +216,7 @@ a:hover {
 }
 
 
-@media only screen and (max-width: 768px) {
+@media (min-width: 600px) {
 	p {
 		font-size: .9rem;
 	}
@@ -266,8 +225,7 @@ a:hover {
 		border-bottom: 1px solid white;
 	}
 
-  .show {
-    max-width: 100% !important;
-    width: 100% !important;
-  }
+	.show {
+		max-width: 33%;
+	}
 }
